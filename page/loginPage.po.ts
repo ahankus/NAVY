@@ -1,4 +1,5 @@
-import {ElementFinder, element, by} from "protractor";
+import {ElementFinder, element, by, ElementArrayFinder} from "protractor";
+import { toASCII } from "punycode";
 
 export class login {
     email: ElementFinder;
@@ -10,7 +11,7 @@ export class login {
         this.email = element(by.id('inputEmail'));
         this.password = element(by.id('inputPassword'));
         this.loginButton = element(by.buttonText('Login'));
-        this.logoutButton = element(by.buttonText('Logout'));
+        this.logoutButton = element(by.css("nav[class='navbar-nav ml-auto']"));
 
     }
 }

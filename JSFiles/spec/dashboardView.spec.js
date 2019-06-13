@@ -9,15 +9,12 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 const protractor_1 = require("protractor");
-const loginPage_po_1 = require("../page/loginPage.po");
+const dashboardPage_po_1 = require("../page/dashboardPage.po");
 describe('NAVY app test', function () {
     it('Should login to the app and navigate to Dashboard view', () => __awaiter(this, void 0, void 0, function* () {
-        let navsupLogin = new loginPage_po_1.login();
-        yield protractor_1.browser.get('http://10.16.34.112:4200/login');
-        yield navsupLogin.email.sendKeys('andrzej');
-        yield navsupLogin.password.sendKeys('andrzej');
-        yield navsupLogin.loginButton.click();
+        let dashView = new dashboardPage_po_1.dashboard();
+        yield dashView.dashButton.click();
         yield expect(protractor_1.browser.getCurrentUrl()).toEqual('http://10.16.34.112:4200/dashboard');
     }));
 });
-//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiZGFzaGJvYXJkVmlldy5zcGVjLmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiLi4vLi4vc3BlYy9kYXNoYm9hcmRWaWV3LnNwZWMudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7OztBQUFBLDJDQUFtQztBQUNuQyx1REFBMkM7QUFHM0MsUUFBUSxDQUFDLGVBQWUsRUFBRTtJQUV0QixFQUFFLENBQUMsd0RBQXdELEVBQUUsR0FBUyxFQUFFO1FBRXBFLElBQUksV0FBVyxHQUFHLElBQUksb0JBQUssRUFBRSxDQUFDO1FBQzlCLE1BQU0sb0JBQU8sQ0FBQyxHQUFHLENBQUMsZ0NBQWdDLENBQUMsQ0FBQztRQUNwRCxNQUFNLFdBQVcsQ0FBQyxLQUFLLENBQUMsUUFBUSxDQUFDLFNBQVMsQ0FBQyxDQUFDO1FBQzVDLE1BQU0sV0FBVyxDQUFDLFFBQVEsQ0FBQyxRQUFRLENBQUMsU0FBUyxDQUFDLENBQUM7UUFDL0MsTUFBTSxXQUFXLENBQUMsV0FBVyxDQUFDLEtBQUssRUFBRSxDQUFDO1FBQ3RDLE1BQU0sTUFBTSxDQUFDLG9CQUFPLENBQUMsYUFBYSxFQUFFLENBQUMsQ0FBQyxPQUFPLENBQUMsb0NBQW9DLENBQUMsQ0FBQztJQUV4RixDQUFDLENBQUEsQ0FBQyxDQUFDO0FBRVAsQ0FBQyxDQUFDLENBQUEifQ==
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiZGFzaGJvYXJkVmlldy5zcGVjLmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXMiOlsiLi4vLi4vc3BlYy9kYXNoYm9hcmRWaWV3LnNwZWMudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7OztBQUFBLDJDQUFtQztBQUNuQywrREFBbUQ7QUFFbkQsUUFBUSxDQUFDLGVBQWUsRUFBRTtJQUV0QixFQUFFLENBQUMsd0RBQXdELEVBQUUsR0FBUyxFQUFFO1FBRXBFLElBQUksUUFBUSxHQUFHLElBQUksNEJBQVMsRUFBRSxDQUFDO1FBRS9CLE1BQU0sUUFBUSxDQUFDLFVBQVUsQ0FBQyxLQUFLLEVBQUUsQ0FBQztRQUNsQyxNQUFNLE1BQU0sQ0FBQyxvQkFBTyxDQUFDLGFBQWEsRUFBRSxDQUFDLENBQUMsT0FBTyxDQUFDLG9DQUFvQyxDQUFDLENBQUM7SUFFeEYsQ0FBQyxDQUFBLENBQUMsQ0FBQztBQUVQLENBQUMsQ0FBQyxDQUFBIn0=
