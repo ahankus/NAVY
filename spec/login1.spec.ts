@@ -10,6 +10,6 @@ describe('NAVY app test', function() {
         let navsupLogin = new login();
         
         await expect(element(by.id('logoImage')).isDisplayed()).toBe(true);
-
+        
     })
 });

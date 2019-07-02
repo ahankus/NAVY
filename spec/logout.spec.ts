@@ -13,6 +13,6 @@ describe('NAVY app test', function() {
         
         await navsupLogin.logoutButton.click();
         await expect(browser.getCurrentUrl()).toEqual('http://10.16.34.112:4200/login');
-
+        
     })
 });

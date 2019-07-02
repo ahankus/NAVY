@@ -3,6 +3,7 @@ export let config: Config = {
     // The address of a running selenium server.
     seleniumAddress: 'http://localhost:4444/wd/hub',
     directConnect: true,
+    
     // Capabilities to be passed to the webdriver instance.
     capabilities: {
       browserName: 'chrome'
@@ -13,6 +14,21 @@ export let config: Config = {
 
       
     },
+
+    /*specs: [
+      '../spec/login1.spec.js',
+      '../spec/auditView.spec.js',
+      '../spec/dashboardView.spec.js',
+      '../spec/spendsView.spec.js',
+      '../spec/addingAudit.spec.js',
+      '../spec/adminView.spec.js',
+      '../spec/deletingUser.spec.js',
+      '../spec/removingAudit.spec.js',
+      '../spec/newUser.spec.js',  
+      '../spec/logout.spec.js',    
+      '../spec/editUser.spec.js',  
+      
+    ],*/
     
     onPrepare: () => 
     {

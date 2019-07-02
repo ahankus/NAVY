@@ -12,6 +12,6 @@ describe('NAVY app test', function() {
         
         await homepage.auditButton.click();
         await expect(browser.getCurrentUrl()).toEqual('http://10.16.34.112:4200/audit');
-
+        
     })
 });
